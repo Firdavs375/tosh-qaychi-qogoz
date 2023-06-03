@@ -5,6 +5,23 @@ body {
 .selections {
   display: flex;
   justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.btnDiv {
+  background: red;
+  border-radius: 20px;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+
+.btnDiv:nth-child(2){
+  background: green;
+}
+
+.btnDiv:nth-child(3){
+  background: yellow;
 }
 
 .selection {
@@ -12,7 +29,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 5rem;
   transition: 100ms;
 }
 
@@ -21,7 +38,7 @@ body {
 }
 
 .results {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
@@ -31,7 +48,7 @@ body {
 
 .result-score {
   margin-left: .1rem;
-  font-size: .5rem;
+  font-size: 30px;
   color: #333;
 }
 
